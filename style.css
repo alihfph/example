@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: none;
+    color: grey;
+    font-family: arial;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+
+.clearfix{zoom: 1}
+.clearfix:after {
+    clear: both;
+    content: '.';
+    content: close-quote;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*...........Reusable........*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section{
+    
+    padding: 80pc 0;
+}
+
+
+.box{
+    
+    padding: 1px;
+}
+/*...........Header........*/
+
+
+header {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(Sid.jpg); 
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    text-decoration-color: white;
+    background-attachment: fixed;
+ }
+
+/*...........HeroText........*/
+
+
+.hero-text-box{
+    color: white;
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+/*...........Headings........*/
+
+h1 {
+    font-family: Dancing Script;
+    
+}
+h1, h2, h3 {
+    
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    margin: #fff;
+    color: white;
+    font-size: 240%;
+    font-weight: 300;
+    transform: uppercase;   
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+h2{
+    font-size: 150%;
+    transform: uppercase;
+    letter-spacing: 0;
+    word-spacing: 4px;
+    text-align: center; 
+    margin-top: 40px;
+}
+h3{
+    font-size: 100%;
+    margin-bottom: 5%;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: black;
+    content: "";
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+h4 {
+    font-size: 150%;
+    transform: uppercase;
+    letter-spacing: 0;
+    word-spacing: 4px;
+    text-align: center; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+h4:after{
+    display: block;
+    height: 2px;
+    background-color: black;
+    content: "";
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+/*...........Generics Links........*/
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: orange;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover,
+a:active{
+   color: orange;
+    border-bottom: 1px solid black;
+}
+
+
+/*...........Paragraph........*/
+
+.long-copy{
+    
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+}
+
+.box p {
+    
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*...........Icons........*/
+.icon-big{
+    
+    font-size: 400%;
+    display: block;
+    color: forestgreen;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.icon-small  {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    font-size: 100%;
+    line-height: 120%;
+    vertical-align: middle;
+    color: orange;
+    margin-top: -4px;
+        
+}
+/*..............Button................*/
+
+.btn:link,
+.btn:visited,
+input [type="button"]{
+  background-color: #c0392b;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 45%;
+}
+.btn-full:link,
+.btn-full:visited,
+input [type="button"]{
+    background-color: rgb(74, 116, 194);
+    color: #ecf0f1;
+    border: 1px solid #ecf0f1;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #ecf0f1;
+    background-color: rgb(65, 94, 187);
+    scroll-behavior: smooth;
+}
+.btn-full:hover,
+.btn-full:active,
+input [type="button"]:hover,
+input [type="button"]:active{
+    border: 1px solid #27ae60;
+    color: rgb(61, 102, 180);
+    background-color: #2980b9;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #2980b9;
+    color: rgb(56, 70, 153);
+    background-color: #27ae60;
+}
+
+.bt-app:link,
+.bt-app:visited{
+    border: 0px;
+}
+
+.app-screen img{
+    
+    height: 50%;
+    width: auto;
+}
+/*...........Logo........*/
+
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/*...........NavBar........*/
+
+.main-nav{
+    top: 0%;
+    position: sticky;
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+    position: sticky;
+
+}
+
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.02px;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #27ae60;
+}
+.h3{
+    font-family: fantasy;
+}
+
+/*...........Photo-Albumb........*/
+
+.family-photo {
+    width: 100%;
+    list-style: none; 
+    margin-bottom: 20px;
+}
+.photo-ammi li {
+    width: 25%;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.Bhagan{
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.Bhagan img {
+    opacity: 0.7;
+    width:100%;
+    padding: 0;
+    height:auto;
+    margin: 0;
+    float: left;
+    transform: scale(1.15);
+    transition: transform(0.05s) opacity 0.5s;
+    
+}
+.Bhagan img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/*...........Step and how it works........*/
+.step {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.step-box first-child{
+    text-align: right;
+    
+    
+    
+}
+.step-box last-child{
+    text-align: left;
+    
+}
+.work-step last-of-type {
+    margin-bottom: 90px;
+}
+.bhai-screen img {
+    width: 80px;
+    height: 100px
+}
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step div {
+    color: gery;
+    border: 2px solid grey;
+    display:inline-block;
+    border-radius: 110%;
+    height: 5%;
+    width: 5%;
+    text-align: center;
+    
+    padding: 5px;
+    font-size: 80%;
+    margin-right: 5px;
+}
+.bt-app img {
+     height: 100px;
+     width:  170px;
+    margin-top: 115px;
+}
+
+/*...........Cities Setion........*/
+ 
+.box img {
+    width: 90%;
+    height: auto;
+    margin: 15px;
+}
+.city-features {
+    margin-bottom: 5px;
+}
+
+
+/*...........Customer review........*/
+
+.customer img {
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)),url(pis/back-cust.jpg);
+    background-size: cover;
+    color: #f0fdff;
+    background-attachment: fixed;
+}
+.blockqoute {
+    padding:2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+cite{
+    font-size: 90%;
+    margin-top: 10%;
+    display: block;
+}
+cutomer image {
+    height: 45%;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+blockquote:before{
+    content:"\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -155px;
+    left: -3;
+    
+}
+
+/*..............Section-Price................*/
+
+.section-plan {
+    background-color: #433728;
+    
+    
+}
+.plan-box {
+    background-color: #d8e4eb;
+    text-decoration-color: blue; 
+    width: 100%;
+    color: #171717;
+    margin-right: 15%;
+    text-align: center;
+    border-left-style: inset;
+}
+.plan-box div{
+    padding: 15px;
+    background-color: #97bcc6;
+    width: 90%;
+    margin-left: 15%;
+}
+.plan-box div:first-child{
+    background-color: #e0edf0;
+}
+.plan-box div:last-child{
+    text-align:center;
+    border-bottom-right-radius: 15px;
+    
+}
+.plan-price{
+    text-align: center;
+    background-color: #bad4eb;
+    font-size: 120%;
+    margin-bottom: 10px;
+    font-weight: 10px
+}
+.plan-price-meal{
+    font-size: 80%;
+    color: orangered;
+}
+.plan-price span{
+    font-size: 200%;
+    font-weight: 300;
+}
+.plan-box ul li {
+    background-color: rgb(183, 209, 232);
+    padding: 5px 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+/*..............Contact for................*/
+
+.contact-form{
+    
+    width: 60%;
+    margin: 0 auto;
+   
+    
+}
+
+select,
+input,
+textarea{    
+padding: 5px; 
+box-sizing: border-box;    
+}
+input[type="text"],
+input[type="Email"]{
+    margin-left: 122px;
+}
+
+input[type="button"] {
+    margin-left: 165px;
+    cursor: pointer;
+}
+
+
+
+
+input[type="checkbox"]
+input[type="checkbox"]:last-child{
+
+position: relative;
+align-items: baseline;    
+top: 2PX;  
+padding: 110px;
+margin-left: 120px; 
+    
+}
+
+.map-container-3{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-3 iframe{
+    left:0;
+    top:0;
+    height:70%;
+    width:100%;
+    position:absolute;
+    }
+
+
+    .footer {
+        left: 0;
+        bottom: 0;
+        padding: 30px;
+        width: 100%;
+        background-color: rgb(82, 0, 177);
+        color: white;
+        text-align: center;
+      }
