@@ -26,8 +26,10 @@ html {
 /*...........Reusable........*/
 
 .row {
-    max-width: 1140px;
-    margin: 0 auto;
+    max-width: 1180px;
+    margin: auto;
+
+    padding: 0;
     text-align: center;
 }
 
@@ -291,8 +293,9 @@ input [type="button"]:active{
 .family-photo {
     width: 100%;
     list-style: none; 
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+   
 }
 .photo-ammi li {
     width: 25%;
@@ -546,3 +549,5 @@ margin-left: 120px;
         color: white;
         text-align: center;
       }
+
+      
